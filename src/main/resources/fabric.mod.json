@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-starter",
+  "version": "${version}",
+
+  "name": "Fabric Starter",
+  "description": "Mod.",
+  "authors": [
+    "marcus8448"
+  ],
+  "contact": {
+    "homepage": "https://fmarcus8448.github.io/",
+    "sources": "https://github.com/marcus8448/fabric-starter"
+  },
+
+  "license": "LGPLv3",
+  "icon": "assets/fabric-starter/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.marcus8448.mods.fabricStarter.FabricStarter"
+    ]
+  },
+  "mixins": [
+    "fabric-starter.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.10.0",
+    "minecraft": "1.16.x"
+  }
+}
