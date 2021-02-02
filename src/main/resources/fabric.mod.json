@@ -13,7 +13,7 @@
     "sources": "https://github.com/marcus8448/fabric-starter"
   },
 
-  "license": "LGPLv3",
+  "license": "LGPL-3-or-later",
   "icon": "assets/fabric-starter/icon.png",
 
   "environment": "*",
