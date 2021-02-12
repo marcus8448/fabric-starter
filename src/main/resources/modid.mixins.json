@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.marcus8448.mods.fabricStarter.mixin",
+  "package": "io.github.marcus8448.mods.modid.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],

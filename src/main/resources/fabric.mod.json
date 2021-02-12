@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "fabric-starter",
+  "id": "modid",
   "version": "${version}",
 
-  "name": "Fabric Starter",
-  "description": "Mod.",
+  "name": "Mod Name",
+  "description": "Mod Desc",
   "authors": [
     "marcus8448"
   ],
   "contact": {
-    "homepage": "https://fmarcus8448.github.io/",
-    "sources": "https://github.com/marcus8448/fabric-starter"
+    "homepage": "https://marcus8448.github.io/",
+    "sources": "https://github.com/marcus8448/modid"
   },
 
   "license": "LGPL-3-or-later",
-  "icon": "assets/fabric-starter/icon.png",
+  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.marcus8448.mods.fabricStarter.FabricStarter"
+      "io.github.marcus8448.mods.modid.ModName"
     ]
   },
   "mixins": [
-    "fabric-starter.mixins.json"
+    "modid.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.10.0",
-    "minecraft": "1.16.x"
+    "fabricloader": ">=0.11.0",
+    "minecraft": ">=1.16"
   }
 }
