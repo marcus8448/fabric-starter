@@ -10,6 +10,7 @@ val loaderVersion       = project.property("loader.version").toString()
 
 val modVersion          = project.property("mod.version").toString()
 val modid               = project.property("mod.id").toString()
+val modName             = project.property("mod.name").toString()
 val modGroup            = project.property("mod.group").toString()
 val modDescription      = project.property("mod.description").toString()
 
@@ -35,7 +36,7 @@ group = modGroup
 version = modVersion
 
 base {
-    archivesBaseName = modid
+    archivesBaseName = modName
 }
 
 loom {
@@ -176,7 +177,7 @@ tasks.processResources {
     inputs.property("version", modVersion)
 
     filesMatching("fabric.mod.json") {
-        expand(mutableMapOf("version" to modVersion, "mod_name" to modid, "mod_description" to modDescription))
+        expand(mutableMapOf("version" to modVersion, "modid" to modid, "mod_name" to modName, "mod_description" to modDescription))
     }
 
     // Minify json resources

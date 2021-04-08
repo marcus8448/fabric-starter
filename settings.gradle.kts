@@ -12,4 +12,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "fabric-starter"
+rootProject.name = rootProject.buildFile.parentFile.name

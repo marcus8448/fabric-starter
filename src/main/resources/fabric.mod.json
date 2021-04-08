@@ -3,7 +3,7 @@
   "id": "${modid}",
   "version": "${version}",
 
-  "name": "${modname}",
+  "name": "${mod_name}",
   "description": "${mod_description}",
   "authors": [
     {
