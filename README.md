@@ -1,1 +1,1 @@
-# Fabric Starter
+# ModName

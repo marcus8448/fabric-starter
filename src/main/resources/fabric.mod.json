@@ -1,33 +1,39 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "${modid}",
   "version": "${version}",
 
-  "name": "Mod Name",
-  "description": "Mod Desc",
+  "name": "${modname}",
+  "description": "${mod_description}",
   "authors": [
-    "marcus8448"
+    {
+      "name": "marcus8448",
+      "contact": {
+        "homepage": "https://marcus8448.github.io/"
+      }
+    }
   ],
   "contact": {
-    "homepage": "https://marcus8448.github.io/",
-    "sources": "https://github.com/marcus8448/modid"
+    "homepage": "https://marcus8448.github.io/projects/{$modid}/",
+    "sources": "https://github.com/marcus8448/${modid}.git",
+    "issues": "https://github.com/marcus8448/${modid}/issues/"
   },
 
-  "license": "LGPL-3-or-later",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0-only",
+  "icon": "assets/${modid}/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.marcus8448.mods.modid.ModName"
+      "io.github.marcus8448.mods.{modid}.ModName"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "${modid}.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.0",
-    "minecraft": ">=1.16"
+    "fabricloader": "*",
+    "minecraft": "*"
   }
 }
